@@ -117,7 +117,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     # Prevent Splash Screen Changing.
 		export OF_NO_SPLASH_CHANGE=0
     # Magisk Boot Patch.
-		export OF_USE_MAGISKBOOT=1 
+	#export OF_USE_MAGISKBOOT=1 
 		export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
     # Metadata Support.
 	#export OF_FBE_METADATA_MOUNT_IGNORE=1 
@@ -156,6 +156,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 		export OF_FORCE_PREBUILT_KERNEL=1
     # This is useful for non-Xiaomi devices
 		export OF_NO_ADDITIONAL_MIUI_PROPS_CHECK=1
+	# Point to an alternative Magisk addon installer zip	
+		export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-v26.1.zip
 
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
 	  export | grep "FOX" >> $FOX_BUILD_LOG_FILE
