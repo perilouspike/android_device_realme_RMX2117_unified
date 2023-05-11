@@ -42,7 +42,7 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/roo
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX2117
-PRODUCT_NAME := twrp_RMX2117
+PRODUCT_NAME := omni_RMX2117
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme Narzo 30 Pro 5G
 PRODUCT_MANUFACTURER := realme
