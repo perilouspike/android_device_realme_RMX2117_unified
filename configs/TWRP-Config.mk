@@ -18,7 +18,7 @@ TW_CUSTOM_CPU_TEMP_PATH := /sys/class/power_supply/battery/temp
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 TW_USE_FSCRYPT_POLICY := 1
-#TW_INCLUDE_FBE_METADATA_DECRYPT := true
+TW_INCLUDE_FBE_METADATA_DECRYPT := true
 
 # Statusbar icons flags
 #TW_STATUS_ICONS_ALIGN := center
