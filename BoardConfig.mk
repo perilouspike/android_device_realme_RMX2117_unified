@@ -72,7 +72,7 @@ BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 buildvariant=user
-BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery  # TODO: Used in other device tree. Do we need it?
+#BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery  # TODO: Used in other device tree. Do we need it?
 
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo
@@ -166,7 +166,7 @@ PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 ##################################
 PB_DISABLE_DEFAULT_TREBLE_COMP := true
 PB_TORCH_PATH := "/sys/class/flashlight"
-PB_TORCH_MAX_BRIGHTNESS := 1
+#PB_TORCH_MAX_BRIGHTNESS := 1
 
 # TWRP Configuration
 include $(DEVICE_PATH)/configs/TWRP-Config.mk
